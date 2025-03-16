@@ -296,3 +296,75 @@ body{
     margin-bottom: -30px;
     color: var(--clr-Grey-100);
 }
+
+@media(max-width:1024px){
+    body{
+        height: 100%;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1.5fr 1fr;
+        grid-template-areas: 
+            'box1 box1'
+            'box1 box1'
+            'box2 box4'
+            'box2 box4'
+            'box5 box5'
+            'box5 box5'
+            'box3 box3'
+            'box3 box3'
+        ;
+        gap: 2rem;
+        padding: 4rem;
+    }
+
+    .daniel .comillas{
+        border-radius: 0;
+        position:relative;
+        z-index: -1;
+        left: 450px;
+        top: -165px;
+        width: 8rem;
+    }
+}
+
+@media(max-width:480px){
+    body{
+        height: 100%;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 1fr 1fr 1fr 1fr 1fr 200px 1fr 1fr 1fr;
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    .daniel .comillas{
+        border-radius: 0;
+        position:relative;
+        z-index: -1;
+        left: 450px;
+        top: -165px;
+        width: 8rem;
+    }
+
+    .daniel .description-two{
+        margin-bottom: -100px;
+    }
+
+    .jonathan{
+        grid-area: 3/1/4/3;
+    }
+
+    .jonathan .description-two{
+        margin-bottom: 0px;
+    }
+
+    .jeanette{
+        grid-area: 4/1/5/3;
+    }
+
+    
+}
