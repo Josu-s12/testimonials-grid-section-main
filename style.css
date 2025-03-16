@@ -327,6 +327,10 @@ body{
         top: -165px;
         width: 8rem;
     }
+
+    .daniel img{
+        display: none;
+    }
 }
 
 @media(max-width:480px){
@@ -366,5 +370,7 @@ body{
         grid-area: 4/1/5/3;
     }
 
-    
+    .daniel img{
+        display: none;
+    }
 }
